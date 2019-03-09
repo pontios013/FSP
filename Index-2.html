@@ -108,9 +108,10 @@
  <font face ="Times New Roman">Secure-ASP-NET-MVC</font>
 <BR>
 <BR>
-<font face ="Times New Roman"><a id="CSFR">Click me to reset your age!!!!</a>
-
-<script type="text/javascript">
+<table style="width:100%">
+  <tr>
+    <th><a id="CSFR">Click me to reset your age!!!!</a></th>
+    <th><script type="text/javascript">
     $("#CSFR").click(function () {
         $.ajax({
             url: "/Registered/MyAge",
@@ -120,7 +121,8 @@
             error: function () { alert("Attack failed"); }
         });
     });
-</script></font>
+</script></th> 
+  </tr>
 <BR>
 <BR>
 </Center>
